@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Lanzamiento de proyectil</title>
+</head>
+
+<body>
+    <canvas id="screen" onclick="borra()"><span style="color: red">Elemento <b>canvas</b> no soportado.</span></canvas>
+    <div class="container formulario">
+        <div class="w-100 Nombres">
+            <ul>
+                <li>Esteban Lopez Mazuera</li>
+                <li>Lina Duque Becerra</li>
+                <li>Milton Lenis</li>
+            </ul>
+        </div>
+        <form name="formulario">
+
+            <div id="datos">Gravedad:<input name="gravedad" type="text" value="9.81" size="1" class="data"
+                     />m/s<sup>2</sup> Velocidad inicial:<input name="vo"
+                    type="text" value="100" size="1" class="data"  />m/s
+                &Aacute;ngulo de tiro:<input name="grados" type="text" value="45" size="1" class="data"
+                     />&deg;
+            </div>
+            <div id="tiempo">
+                <input name="h" type="text" value="00" size="1" class="crono" />:<input name="m" type="text" value="00"
+                    size="1" class="crono" />:<input name="s" type="text" value="00" size="1" class="crono" />:<input
+                    name="cs" type="text" value="00" size="1" class="crono" />
+                <br>
+                <input type="button" value="Start" onclick="start()" class="boton" /><input type="button" value="Stop"
+                    onclick="stop()" class="boton" /><input type="button" value="Reset" onclick="reset()"
+                    class="boton" />
+            </div>
+            <div id="coordenadas">x:<input name="x" type="text" value="" class="coor" disabled="true"/><br>y:<input name="y" type="text" value="" class="coor" disabled="true"/></div>
+        
+        </form>
+
+
+
+    </div>
+
+    <script src="JS/proyectil.js"></script>
+</body>
+
+</html>
